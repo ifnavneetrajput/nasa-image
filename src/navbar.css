@@ -1,13 +1,29 @@
 
 .navbar {
-  background-color: #333; 
+  background-color: #333;
   color: white;
-  position: static  ; 
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000; 
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  list-style-type: none;
+  padding: 20px 0; 
+  margin: 0;
+  
+  font-size: 20px;
+}
+.navbar li {
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+  padding: 0 15px; 
+  
+}
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar li {
+    padding: 10px 0;
+  }
 }

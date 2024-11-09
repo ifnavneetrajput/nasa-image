@@ -1,4 +1,5 @@
 import { useState , useEffect} from "react";
+import './SearchBox.css'
 
 export default function SearchBox({ onSearch }) {
   const [keyword, setKeyword] = useState("");

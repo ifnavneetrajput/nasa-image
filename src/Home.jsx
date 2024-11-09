@@ -13,8 +13,7 @@ export default function Home() {
   const fetchImages = async (searchTerm ) => {
     setfetching(true)
     const url = searchTerm
-      ? `https://images-api.nasa.gov/search?keywords=${searchTerm}&page=${page}`
-      : `https://images-api.nasa.gov/search?media_type=image`;
+      ? `https://images-api.nasa.gov/search?keywords=${searchTerm}&page=${page}` : `https://images-api.nasa.gov/search?media_type=image`;
 
       console.log("API Request URL:", url);
 
